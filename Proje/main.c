@@ -3,7 +3,7 @@
 #include <stdlib.h>
 //Gerekli değişkenleri global olarak tanımlıyoruz
 FILE *dosya;
-char *ad[100],*soyad[100],*add,genel[200],*alan[200],floa[200];
+char *ad[100],*soyad[100],*add,genel[200],*alan[200];
 int x1,x2,x3,x4,m;
 float aylik[100],enbuyuk;
 //İstenilen Structure yapısını tanımlıyoruz
