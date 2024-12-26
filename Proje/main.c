@@ -8,7 +8,7 @@ int x1,x2,x3,x4,m;
 float aylik[100],enbuyuk;
 //İstenilen Structure yapısını tanımlıyoruz
 struct Personel {
-    char *ad[30];
+    char ad[30];
     char soyad[30];
     float aylik;
 };
@@ -16,7 +16,7 @@ struct Personel {
 struct Personel person[12];
 //Satis.txt dosyasındaki değerleri strtok kullanarak kelime kelime alan dizisine aktarıyoruz
 void ekledegistir() {
-    dosya=fopen("C:\\Users\\Can\\Desktop\\satis.txt", "r");
+    dosya=fopen("C:\\Users\\emres\\Desktop\\satis.txt", "r");
     x1=x2=x3=x4=m=0;
     for (int i=0;i<12;i++) {
         fgets(genel,100,dosya);
@@ -67,7 +67,7 @@ void siralayarakyazdir() {
         }
         FILE *fptr;
         //Prfrmns dosyasını yazma modunda açıyoruz
-        fptr=fopen("C:\\Users\\Can\\Desktop\\prfrmns.txt","w");
+        fptr=fopen("C:\\Users\\emres\\Desktop\\prfrmns.txt","w");
         //Personel verilerini bu dosyaya yazıyoruz
         for (int i=0;i<12;i++) {
             fprintf(fptr,"%s %s %.2f\n",person[i].ad,person[i].soyad,person[i].aylik);
